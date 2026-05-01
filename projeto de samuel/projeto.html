@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLab — Informática, Algoritmos & Python</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="brand-icon">&lt;/&gt;</span>
+      <span class="brand-name">CodeLab</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#informatica">Informática</a></li>
+      <li><a href="#algoritmos">Algoritmos</a></li>
+      <li><a href="#python">Python</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+    </ul>
+    <button class="nav-cta">Começar</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <div class="hero-tag">// mundo digital</div>
+      <h1 class="hero-title">
+        <span class="line-1">Domine a</span>
+        <span class="line-2">lógica do</span>
+        <span class="line-3 accent">computador</span>
+      </h1>
+      <p class="hero-sub">
+        Informática, algoritmos e Python — do conceito ao código. 
+        Aprenda como as máquinas pensam.
+      </p>
+      <div class="hero-ctas">
+        <a href="#informatica" class="btn-primary">Explorar</a>
+        <a href="#python" class="btn-ghost">Ver Python →</a>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">terminal</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span> python hello.py</div>
+        <div class="t-line out">Olá, Mundo!</div>
+        <div class="t-line"><span class="t-prompt">$</span> python sort.py</div>
+        <div class="t-line out">[1, 3, 5, 8, 12, 20]</div>
+        <div class="t-line"><span class="t-prompt">$</span> <span class="cursor">█</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">3+</span><span class="stat-lbl">Tópicos</span></div>
+    <div class="stat-divider">|</div>
+    <div class="stat"><span class="stat-num">50+</span><span class="stat-lbl">Exemplos de código</span></div>
+    <div class="stat-divider">|</div>
+    <div class="stat"><span class="stat-num">∞</span><span class="stat-lbl">Curiosidade</span></div>
+    <div class="stat-divider">|</div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Gratuito</span></div>
+  </div>
+
+  <!-- INFORMATICA -->
+  <section class="section" id="informatica">
+    <div class="section-header">
+      <span class="section-tag">01 — INFORMÁTICA</span>
+      <h2 class="section-title">O que é a <em>computação</em>?</h2>
+      <p class="section-sub">A base de tudo que você usa no dia a dia — do celular ao servidor na nuvem.</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card card--tall">
+        <div class="card-icon"></div>
+        <h3>Hardware vs Software</h3>
+        <p>Hardware é tudo que você pode tocar: processador, memória RAM, SSD. Software são os programas que rodam nesse hardware — do sistema operacional ao app de fotos.</p>
+        <div class="card-tag">FUNDAMENTOS</div>
+      </div>
+      <div class="card">
+        <div class="card-icon"></div>
+        <h3>Como o Processador Funciona</h3>
+        <p>O CPU executa bilhões de operações por segundo, seguindo um ciclo: Buscar → Decodificar → Executar.</p>
+        <div class="card-tag">ARQUITETURA</div>
+      </div>
+      <div class="card">
+        <div class="card-icon"></div>
+        <h3>Memória e Armazenamento</h3>
+        <p>RAM é rápida e temporária. SSD é persistente e mais lento. Cache é minúscula e ultra-rápida.</p>
+        <div class="card-tag">MEMÓRIA</div>
+      </div>
+      <div class="card card--wide">
+        <div class="card-icon"></div>
+        <h3>Redes e Internet</h3>
+        <p>A internet é uma rede de redes. Dados viajam em pacotes pelo protocolo TCP/IP, passando por roteadores até chegar ao destino. O DNS traduz nomes (google.com) em endereços IP.</p>
+        <div class="card-tag">REDES</div>
+      </div>
+      <div class="card">
+        <div class="card-icon"></div>
+        <h3>Segurança Digital</h3>
+        <p>Criptografia, senhas fortes, autenticação de dois fatores — como proteger dados no mundo digital.</p>
+        <div class="card-tag">SEGURANÇA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALGORITMOS -->
+  <section class="section section--dark" id="algoritmos">
+    <div class="section-header">
+      <span class="section-tag">02 — ALGORITMOS</span>
+      <h2 class="section-title">Lógica antes do <em>código</em></h2>
+      <p class="section-sub">Um algoritmo é uma sequência finita de passos para resolver um problema.</p>
+    </div>
+
+    <div class="algo-showcase">
+      <!-- Bubble Sort -->
+      <div class="algo-card">
+        <div class="algo-header">
+          <h3>Bubble Sort</h3>
+          <span class="complexity">O(n²)</span>
+        </div>
+        <p>Compara pares adjacentes e os troca até a lista estar ordenada. Simples mas lento para listas grandes.</p>
+        <div class="code-block">
+          <pre><code><span class="kw">def</span> <span class="fn">bubble_sort</span>(lista):
+    n = <span class="fn">len</span>(lista)
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(n):
+        <span class="kw">for</span> j <span class="kw">in</span> <span class="fn">range</span>(n - i - <span class="num">1</span>):
+            <span class="kw">if</span> lista[j] > lista[j+<span class="num">1</span>]:
+                lista[j], lista[j+<span class="num">1</span>] = \
+                lista[j+<span class="num">1</span>], lista[j]
+    <span class="kw">return</span> lista</code></pre>
+        </div>
+        <div class="algo-visual">
+          <div class="bar" style="height:40px" data-val="5"></div>
+          <div class="bar" style="height:80px" data-val="8"></div>
+          <div class="bar" style="height:20px" data-val="2"></div>
+          <div class="bar" style="height:60px" data-val="6"></div>
+          <div class="bar" style="height:100px" data-val="10"></div>
+          <div class="bar" style="height:30px" data-val="3"></div>
+        </div>
+      </div>
+
+      <!-- Binary Search -->
+      <div class="algo-card">
+        <div class="algo-header">
+          <h3>Busca Binária</h3>
+          <span class="complexity">O(log n)</span>
+        </div>
+        <p>Divide a lista ao meio repetidamente para encontrar o elemento. Muito mais eficiente que busca linear.</p>
+        <div class="code-block">
+          <pre><code><span class="kw">def</span> <span class="fn">busca_binaria</span>(lista, alvo):
+    esq, dir = <span class="num">0</span>, <span class="fn">len</span>(lista) - <span class="num">1</span>
+    <span class="kw">while</span> esq <= dir:
+        meio = (esq + dir) // <span class="num">2</span>
+        <span class="kw">if</span> lista[meio] == alvo:
+            <span class="kw">return</span> meio
+        <span class="kw">elif</span> lista[meio] < alvo:
+            esq = meio + <span class="num">1</span>
+        <span class="kw">else</span>:
+            dir = meio - <span class="num">1</span>
+    <span class="kw">return</span> -<span class="num">1</span></code></pre>
+        </div>
+        <div class="algo-steps">
+          <div class="step active">Início</div>
+          <div class="step">Meio</div>
+          <div class="step">Esquerda</div>
+          <div class="step">Encontrado!</div>
+        </div>
+      </div>
+
+      <!-- Fibonacci Recursivo -->
+      <div class="algo-card">
+        <div class="algo-header">
+          <h3>Fibonacci</h3>
+          <span class="complexity">Recursão</span>
+        </div>
+        <p>Sequência onde cada número é a soma dos dois anteriores: 0, 1, 1, 2, 3, 5, 8, 13...</p>
+        <div class="code-block">
+          <pre><code><span class="kw">def</span> <span class="fn">fibonacci</span>(n):
+    <span class="kw">if</span> n <= <span class="num">1</span>:
+        <span class="kw">return</span> n
+    <span class="kw">return</span> <span class="fn">fibonacci</span>(n-<span class="num">1</span>) + \
+           <span class="fn">fibonacci</span>(n-<span class="num">2</span>)
+
+<span class="com"># Exemplo de uso</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">8</span>):
+    <span class="fn">print</span>(<span class="fn">fibonacci</span>(i), end=<span class="str">" "</span>)</code></pre>
+        </div>
+        <div class="fib-sequence">
+          <span>0</span><span>1</span><span>1</span><span>2</span><span>3</span><span>5</span><span>8</span><span>13</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Complexidade tabela -->
+    <div class="complexity-table">
+      <h3>Complexidade de Algoritmos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Algoritmo</th>
+            <th>Melhor</th>
+            <th>Médio</th>
+            <th>Pior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bubble Sort</td>
+            <td class="good">O(n)</td>
+            <td class="ok">O(n²)</td>
+            <td class="bad">O(n²)</td>
+          </tr>
+          <tr>
+            <td>Merge Sort</td>
+            <td class="good">O(n log n)</td>
+            <td class="good">O(n log n)</td>
+            <td class="good">O(n log n)</td>
+          </tr>
+          <tr>
+            <td>Quick Sort</td>
+            <td class="good">O(n log n)</td>
+            <td class="good">O(n log n)</td>
+            <td class="bad">O(n²)</td>
+          </tr>
+          <tr>
+            <td>Busca Linear</td>
+            <td class="good">O(1)</td>
+            <td class="ok">O(n)</td>
+            <td class="bad">O(n)</td>
+          </tr>
+          <tr>
+            <td>Busca Binária</td>
+            <td class="good">O(1)</td>
+            <td class="good">O(log n)</td>
+            <td class="good">O(log n)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PYTHON -->
+  <section class="section" id="python">
+    <div class="section-header">
+      <span class="section-tag">03 — PYTHON</span>
+      <h2 class="section-title">A linguagem do <em>futuro</em></h2>
+      <p class="section-sub">Simples, poderosa e versátil. Python domina IA, ciência de dados, web e automação.</p>
+    </div>
+
+    <div class="python-intro">
+      <div class="python-logo-wrap">
+        <div class="python-logo"></div>
+        <div class="python-facts">
+          <div class="fact"><strong>Criado em:</strong> 1991 por Guido van Rossum</div>
+          <div class="fact"><strong>Versão atual:</strong> Python 3.12+</div>
+          <div class="fact"><strong>Paradigmas:</strong> OOP, funcional, imperativo</div>
+          <div class="fact"><strong>Usado em:</strong> Google, Netflix, NASA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-topics">
+      <!-- Variáveis e Tipos -->
+      <div class="py-topic">
+        <h3><span class="topic-num">01</span> Variáveis e Tipos</h3>
+        <div class="code-block light">
+          <pre><code><span class="com"># Tipos básicos</span>
+nome = <span class="str">"Alice"</span>          <span class="com"># str</span>
+idade = <span class="num">25</span>              <span class="com"># int</span>
+altura = <span class="num">1.68</span>           <span class="com"># float</span>
+ativo = <span class="kw">True</span>            <span class="com"># bool</span>
+
+<span class="com"># Coleções</span>
+lista = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>]
+dicionario = {<span class="str">"chave"</span>: <span class="str">"valor"</span>}
+tupla = (<span class="num">10</span>, <span class="num">20</span>, <span class="num">30</span>)
+conjunto = {<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>}</code></pre>
+        </div>
+      </div>
+
+      <!-- Estruturas de controle -->
+      <div class="py-topic">
+        <h3><span class="topic-num">02</span> Controle de Fluxo</h3>
+        <div class="code-block light">
+          <pre><code><span class="com"># Condicional</span>
+<span class="kw">if</span> idade >= <span class="num">18</span>:
+    <span class="fn">print</span>(<span class="str">"Maior de idade"</span>)
+<span class="kw">elif</span> idade >= <span class="num">13</span>:
+    <span class="fn">print</span>(<span class="str">"Adolescente"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Criança"</span>)
+
+<span class="com"># Loop</span>
+<span class="kw">for</span> item <span class="kw">in</span> lista:
+    <span class="fn">print</span>(item)
+
+<span class="com"># While</span>
+<span class="kw">while</span> contador > <span class="num">0</span>:
+    contador -= <span class="num">1</span></code></pre>
+        </div>
+      </div>
+
+      <!-- Funções -->
+      <div class="py-topic">
+        <h3><span class="topic-num">03</span> Funções</h3>
+        <div class="code-block light">
+          <pre><code><span class="com"># Função simples</span>
+<span class="kw">def</span> <span class="fn">saudar</span>(nome, formal=<span class="kw">False</span>):
+    <span class="kw">if</span> formal:
+        <span class="kw">return</span> <span class="str">f"Bom dia, {nome}."</span>
+    <span class="kw">return</span> <span class="str">f"Oi, {nome}!"</span>
+
+<span class="com"># Lambda (função anônima)</span>
+dobrar = <span class="kw">lambda</span> x: x * <span class="num">2</span>
+
+<span class="com"># List comprehension</span>
+pares = [x <span class="kw">for</span> x <span class="kw">in</span> <span class="fn">range</span>(<span class="num">20</span>)
+         <span class="kw">if</span> x % <span class="num">2</span> == <span class="num">0</span>]</code></pre>
+        </div>
+      </div>
+
+      <!-- POO -->
+      <div class="py-topic">
+        <h3><span class="topic-num">04</span> Orientação a Objetos</h3>
+        <div class="code-block light">
+          <pre><code><span class="kw">class</span> <span class="fn">Animal</span>:
+    <span class="kw">def</span> <span class="fn">_init_</span>(<span class="kw">self</span>, nome):
+        <span class="kw">self</span>.nome = nome
+
+    <span class="kw">def</span> <span class="fn">falar</span>(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="str">"..."</span>
+
+<span class="kw">class</span> <span class="fn">Cachorro</span>(<span class="fn">Animal</span>):
+    <span class="kw">def</span> <span class="fn">falar</span>(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="str">f"{self.nome} diz: Au!"</span>
+
+rex = <span class="fn">Cachorro</span>(<span class="str">"Rex"</span>)
+<span class="fn">print</span>(rex.<span class="fn">falar</span>())</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bibliotecas populares -->
+    <div class="libraries">
+      <h3 class="libraries-title">Bibliotecas Populares</h3>
+      <div class="lib-grid">
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>NumPy</strong>
+          <p>Computação numérica e arrays multidimensionais</p>
+        </div>
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>Pandas</strong>
+          <p>Análise e manipulação de dados</p>
+        </div>
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>Matplotlib</strong>
+          <p>Visualização de dados e gráficos</p>
+        </div>
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>TensorFlow</strong>
+          <p>Machine learning e redes neurais</p>
+        </div>
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>Flask</strong>
+          <p>Framework web minimalista</p>
+        </div>
+        <div class="lib-card">
+          <span class="lib-icon"></span>
+          <strong>FastAPI</strong>
+          <p>APIs modernas e de alta performance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section class="section section--accent" id="recursos">
+    <div class="section-header">
+      <span class="section-tag">04 — RECURSOS</span>
+      <h2 class="section-title">Continue <em>aprendendo</em></h2>
+      <p class="section-sub">Links e materiais para aprofundar seus conhecimentos.</p>
+    </div>
+
+    <div class="recursos-grid">
+      <a class="recurso-card" href="https://docs.python.org/pt-br/3/" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>Documentação Python</strong>
+          <p>Referência oficial em português</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+      <a class="recurso-card" href="https://www.freecodecamp.org/" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>freeCodeCamp</strong>
+          <p>Cursos gratuitos de programação</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+      <a class="recurso-card" href="https://visualgo.net/pt" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>VisuAlgo</strong>
+          <p>Visualização animada de algoritmos</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+      <a class="recurso-card" href="https://leetcode.com/" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>LeetCode</strong>
+          <p>Desafios de programação e algoritmos</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+      <a class="recurso-card" href="https://roadmap.sh/python" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>Python Roadmap</strong>
+          <p>Guia completo de aprendizado</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+      <a class="recurso-card" href="https://cs50.harvard.edu/python/" target="_blank">
+        <span class="recurso-icon"></span>
+        <div>
+          <strong>CS50P — Harvard</strong>
+          <p>Curso gratuito de Python da Harvard</p>
+        </div>
+        <span class="recurso-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="brand-icon">&lt;/&gt;</span>
+      <span class="brand-name">CodeLab</span>
+    </div>
+    <p class="footer-tagline">Aprenda. Codifique. Evolua.</p>
+    <p class="footer-copy">Feito com curiosidade e Python 🐍 — 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
